@@ -1,0 +1,35 @@
+<!--string template yaitu mensubtitusi data dari luar string ke dalam string,
+seperti mengambil data variable atau bahkan mengoperasikan matematika.
+cara pembuatannya dengan menggunakan backtick/(`)
+intinya kita tidak perlu menggunakan tanda plus berulang baru menambahkan variable
+dibawah adalah contoh mensubtitusi nilai langsung pada string template-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+<body>
+    <script>
+        const nama = 'Nadia Omara';
+        const template = `<p>Halo, saya adalah ${nama}</p>`;
+        document.writeln(template);
+        console.info(template);
+
+        const firstName = "Nadia";
+        const middleName = "Omara";
+        const lastName = "Putri";
+
+        const fullName = ` ${firstName} ${middleName} ${lastName}`;
+        document.writeln(fullName);
+        console.info(fullName);
+
+        const nilai = 68;
+        const template2 = `<p> Nama : ${fullName} <br> Hasil : ${nilai > 70} </p>`;
+        document.writeln(template2);
+        console.log(template2);
+    </script>
+</body>
+</html>

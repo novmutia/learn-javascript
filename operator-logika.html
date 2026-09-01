@@ -1,0 +1,21 @@
+<!-- operator logika adalah operator untuk dua buah data boolean dan hasilnya boolean-->
+<Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Logika</title>
+</head>
+<body>
+    <script>
+        const nilaiUjian = 60;
+        const nilaiAbsen = 95;
+
+        const lulusUjian = nilaiUjian >=75;
+        document.writeln(lulusUjian);
+        const lulusAbsen = nilaiAbsen >=70;
+        document.writeln(lulusAbsen);
+
+        const lulus = lulusUjian && lulusAbsen;
+        document.writeln(lulus);
+
+    </script>
