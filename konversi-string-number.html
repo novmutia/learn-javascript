@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String ke Number</title>
+</head>
+<body>
+    <script>
+        const value1 = "19";
+        const value2 = 20;
+        const result = value1 + value2; <!-- menghasilkan string, bukan hasil penjumlahan-->
+
+        document.writeln(result);
+
+        const value3 = parseInt(value1);
+        const value4 = 19;
+        const result2 = value3 + value4;
+        document.writeln('<br>');
+        document.writeln(result2);
+
+        document.writeln(`<p>${parseInt("1.2")}</p>`);
+        document.writeln(`<p>${parseFloat("1.2")}</p>`);
+        document.writeln("<p>1.2</p>");
+        document.writeln(`<p>${Number("1.2")}</p>`);
+    </script>
+</body>
+</html>
