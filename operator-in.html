@@ -1,0 +1,42 @@
+<!--operator in merupakan operator yang digunakan untuk mengecek apakah sebuah property ada di dalam object/array atau tidak.
+jika property tersebuat ada di object maka hasilnya trus dan jika sebaliknya maka false
+walaupun value dari propertynya null/undefined maka tetap dianggap ada-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator in</title>
+</head>
+<body>
+    <script>
+        const produk = {
+            nama: "Iphone",
+            harga: 15000,
+            warna: undefined
+        };
+
+        if ("warna" in produk) {
+            document.writeln(`Property warna ada dalam produk`);
+        } else {
+            document.writeln(`Property warna tidak ada dalam produk`);
+        }
+
+        const mahasiswa = {
+            nama: "Budi",
+            umur: 21
+        };
+        if ("alamat" in mahasiswa) {
+            document.writeln(`<p>Property alamat ada dalam mahasiswa</p>`);
+        } else {
+            document.writeln(`<p>Property alamat tidak ada dalam mahasiswa</p>`);
+        }
+
+        const mahasiswa2 =mahasiswa;
+        if ("nama" in mahasiswa2){
+            alert(`Hello ${mahasiswa2.nama}`);
+        } else {
+            alert(`Property nama tidak ada dalam mahasiswa2`);
+        }
+    </script>
+</body>
