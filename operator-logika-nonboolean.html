@@ -1,0 +1,40 @@
+<!--penggunaan logika AND (&&) dan OR || tidak hanya digunakan untuk boolen namun juga
+dapat digunakan untuk operator logikan tipe data non boolean
+Operator OR || akan mengambil output truthy atau nilai yang pertama
+namun jika outputnya falsy maka akan diambil nilai kedua (jika keduanya falsy)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika Non Boolean</title>
+</head>
+<body>
+    <script>
+        console.info("Hello" || "");
+        console.info("" || []);
+        console.info("0" || "NOL");
+        console.info(null || "NULL");
+        console.info(undefined || "UNDEFINED");
+        console.info(0 || false);
+
+        const person = {
+            firstName : "",
+            lastName : "Nini"
+        };
+        const name = person.firstName || person.lastName;
+        console.info(name);
+
+        /* operator logikan AND (&&) dibaca dari kiri ke kanan
+            operator ini akan mengambil nilai pertama yang falsy. jika tidak ada satupun yang falsy maka yang diambil yang terakhir. */
+
+        console.info("Hello" && "");
+        console.info("" && []);
+        console.info("1" && "NOL");
+        console.info(null && "NULL");
+        console.info(undefined && "UNDEFINED");
+        console.info(0 && false);
+
+</script>
+</body>
+</html>
